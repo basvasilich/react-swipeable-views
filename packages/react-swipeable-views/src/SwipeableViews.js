@@ -304,6 +304,9 @@ class SwipeableViews extends React.Component {
     if (this.props.action) {
       this.props.action({
         updateHeight: this.updateHeight,
+        handleTouchStart: this.handleTouchStart,
+        handleTouchEnd: this.handleTouchEnd,
+        handleTouchMove: this.handleTouchMove,
       });
     }
   }
